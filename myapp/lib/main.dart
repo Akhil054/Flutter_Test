@@ -13,9 +13,19 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: const Text("My First App")),
         body: const Center(
-          child: Text(
-            "Hello, Flutter!",
-            style: TextStyle(fontSize: 28),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                "Hello, Flutter!",
+                style: TextStyle(fontSize: 28),
+              ),
+              SizedBox(height: 20),
+              Text(
+                "Testing",
+                style: TextStyle(fontSize: 16, color: Colors.grey),
+              ),
+            ],
           ),
         ),
       ),
